@@ -15,9 +15,14 @@ tag:
 sticky: true
 # this page will appear in starred articles
 star: true
+headerDepth: 5
 ---
 
-# OneDrive
+# OneDrive / Share
+
+<br/>
+
+## **OneDrive mount**
 
 :::tip
 If your account does not support the API, (for example, the school account has not verified the administrator, or the administrator has disabled the API), then you can also mount it through webdav. For details, see [webdav](webdav.md)
@@ -43,12 +48,12 @@ Fill in the client_id and client_secret obtained in the previous step into the h
 If you need to mount Sharepoint, after completing the previous step, an input site address will appear on the interface that displays the refresh token. After entering the site address, click Get site_id.
 ### **Add storage**
 Fill in the values ​​obtained in the above process one by one.
-#### **Root folder path**
+### **Root folder path**
 The default is `/`, if you need to customize, just fill in the path, starting from the root path, the same as the local path, such as `/test`
 
 
 
-### **The default download method used**
+#### **The default download method used**
 
 ```mermaid
 ---
@@ -65,6 +70,64 @@ flowchart TB
     c1[local proxy]-.alternative.->a2[user equipment]
     b1[Download proxy URL]-.alternative.->a2[user equipment]
     click a1 "../drivers/common.html#webdav-policy"
+    click b1 "../drivers/common.html#webdav-policy"
+    click c1 "../drivers/common.html#webdav-policy"
+```
+
+<br/>
+
+
+
+## **Onedrive Share Url**
+
+![api](/img/drivers/onedrive_app/od_share_add.png)
+
+<br/>
+
+
+
+### **Url**
+
+The sharing link is the same as the example below and can be mounted. It can be obtained from E3, E5, A1, and A1P.
+
+```html
+https://connecthkuhk-my.sharepoint.com/:f:/g/personal/jhyang13_connect_hku_hk/EsEgHtGOWbJImxop6tF15FIBIH-ihrjuDclbrbmwWfY_RA?e=s6fitN
+```
+
+If it is OneDrive personal version, it will not work. The link is as follows
+
+```html
+https://onedrive.live.com/?cid=64EA5FCC7735E8C6&id=64EA5FCC7735E8C6%2117289
+```
+
+<br/>
+
+
+
+### **Password**
+
+It is the extraction code. If you have it, write it. If you don’t have it, don’t fill it in.
+
+
+
+<br/>
+
+#### **The default download method used**
+
+
+```mermaid
+---
+title: Which download method is used by default?
+---
+flowchart TB
+    style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    c1
+    end
+    c1[local proxy]:::someclass==default===>a2[user equipment]
+    classDef someclass fill:#f96
+    b1[Download proxy URL]-.alternative.->a2[user equipment]
     click b1 "../drivers/common.html#webdav-policy"
     click c1 "../drivers/common.html#webdav-policy"
 ```

@@ -15,9 +15,16 @@ tag:
 sticky: true
 # this page will appear in starred articles
 star: true
+headerDepth: 5
 ---
 
-# OneDrive
+# OneDrive / 分享
+
+<br/>
+
+## **正常 OneDrive 挂载**
+
+
 
 :::tip
 如果你的账号不支持 API，（比如学校账号没有验证管理员，或者管理员禁用了 API），那么你也可以通过 WebDAV 挂载。 有关详细信息，请参阅 [WebDAV 页面](webdav.md)
@@ -25,7 +32,7 @@ star: true
 
 首先打开 https://alist.nn.ci/tool/onedrive/request
 
-## **创建应用**
+### **创建应用**
 
 > 你也可以选择跳过此步，使用默认提供的client，但是需要组织管理员批准。
 
@@ -40,31 +47,31 @@ star: true
 
 
 
-## **获取刷新令牌**
+### **获取刷新令牌**
 
 将上一步骤中获得的 `client_id` 和 `client_secret` 填入 https://alist.nn.ci/tool/onedrive/request ，点击"获取刷新令牌"即可
 
 
 
-## **获取 SharePoint site_id**
+### **获取 SharePoint site_id**
 
 如果需要挂载 SharePoint，完成上一步后，在显示刷新令牌的界面会出现一个输入站点地址，输入站点地址后点击获取 `site_id` 即可。
 
 
 
-## **添加账号**
+### **添加账号**
 
 将上述过程中获取得到的值依次填入即可。
 
 
 
-## **根文件夹ID**
+### **根文件夹ID**
 
 默认为 `/`，如果需要自定义，就填路径就行，从根路径开始，和本地路径一样，比如 `/test`
 
 
 
-### **默认使用的下载方式**
+#### **默认使用的下载方式**
 
 ```mermaid
 ---
@@ -81,6 +88,63 @@ flowchart TB
     c1[本机代理]-.备选.->a2[用户设备]
     b1[代理URL]-.备选.->a2[用户设备]
     click a1 "../drivers/common.html#webdav-策略"
+    click b1 "../drivers/common.html#webdav-策略"
+    click c1 "../drivers/common.html#webdav-策略"
+```
+<br/>
+
+
+
+## **Onedrive 分享**
+
+![api](/img/drivers/onedrive_app/od_share_add.png)
+
+<br/>
+
+
+
+### **链接**
+
+分享链接是这样的可以挂载，来自E3、E5、A1、A1P等
+
+```html
+https://connecthkuhk-my.sharepoint.com/:f:/g/personal/jhyang13_connect_hku_hk/EsEgHtGOWbJImxop6tF15FIBIH-ihrjuDclbrbmwWfY_RA?e=s6fitN
+```
+
+如果是OneDrive个人版的就不行，链接如下
+
+```html
+https://onedrive.live.com/?cid=64EA5FCC7735E8C6&id=64EA5FCC7735E8C6%2117289
+```
+
+<br/>
+
+
+
+### **密码**
+
+就是提取码，如果有就写，如果没有就不用谢
+
+
+
+<br/>
+
+#### **默认使用的下载方式**
+
+
+```mermaid
+---
+title: 默认使用的哪种下载方式？
+---
+flowchart TB
+    style c1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff
+    style a2 fill:#ff7575,stroke:#333,stroke-width:4px
+    subgraph ide1 [ ]
+    c1
+    end
+    c1[本机代理]:::someclass==默认===>a2[用户设备]
+    classDef someclass fill:#f96
+    b1[代理URL]-.备选.->a2[用户设备]
     click b1 "../drivers/common.html#webdav-策略"
     click c1 "../drivers/common.html#webdav-策略"
 ```

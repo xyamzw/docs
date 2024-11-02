@@ -43,6 +43,10 @@ star: true
 
 [**点击查看使用说明**](../../config/other.md)
 
+<br/>
+
+
+
 ## **2.qBittorrent**
 
 （这里以Windows端举例，Linux端不清楚有没有）
@@ -132,6 +136,8 @@ star: true
 <br/>
 
 
+
+
 ## **5.115 Cloud**
 
 <Badge text="v3.37.0" type="info" vertical="middle" /> 及以上版本支持在AList调用115离线下载功能
@@ -150,3 +156,11 @@ star: true
   1. 可能会发生不同步的问题（手动右下角刷新 <span style="color: rgb(24, 144, 255);"><svg fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hope-icon hope-c-XNyZK hope-c-PJLV hope-c-PJLV-ifkxHPo-css" tips="refresh" height="1em" width="1em" style="overflow: visible;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5.463 4.433A9.961 9.961 0 0112 2c5.523 0 10 4.477 10 10 0 2.136-.67 4.116-1.81 5.74L17 12h3A8 8 0 006.46 6.228l-.997-1.795zm13.074 15.134A9.961 9.961 0 0112 22C6.477 22 2 17.523 2 12c0-2.136.67-4.116 1.81-5.74L7 12H4a8 8 0 0013.54 5.772l.997 1.795z"></path></svg></span>）
   2. 目前当下载成功后，删除离线列表中完成的任务
   3. 115已经在离线列表中的任务url不能再次添加
+
+<br/>
+
+
+
+## **6.Transmission**
+
+后续补充
