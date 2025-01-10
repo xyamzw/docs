@@ -27,18 +27,16 @@ star: true
 @tab 正式版
 **安装**
 ```bash
-curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
+curl -fsSL "https://alist.nn.ci/v3.sh" -o v3.sh && bash v3.sh
 ```
+![v3-install](/img/guide/v3-install.png)
 
-**更新**
-```bash
-curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update
-```
+**面板管理命令**
 
-**卸载**
-```bash
-curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall
-```
+使用命令：`alist` 或者 `alist-manager`
+![alist-manager](/img/guide/alist-manager.png)
+
+
 
 @tab 测试版
 **安装**
@@ -67,11 +65,11 @@ curl -fsSL "https://alist.nn.ci/beta.sh" | bash -s uninstall
 @tab 正式版
 ```bash
 # Install
-curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install /root
+curl -fsSL "https://alist.nn.ci/v3.sh" -o v3.sh && bash v3.sh install /root
 # update
-curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update /root
+curl -fsSL "https://alist.nn.ci/v3.sh" -o v3.sh && bash v3.sh update /root
 # Uninstall
-curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall /root
+curl -fsSL "https://alist.nn.ci/v3.sh" -o v3.sh && bash v3.sh uninstall /root
 ```
 
 @tab 测试版

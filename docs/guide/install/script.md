@@ -24,19 +24,17 @@ Only for Linux-x86_64/arm64 platform.
 
 @tab Latest
 **Install**
-```bash
-curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install
-```
 
-**Update**
 ```bash
-curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update
+curl -fsSL "https://alist.nn.ci/v3-en.sh" -o v3-en.sh && bash v3-en.sh
 ```
+![v3-install](/img/guide/v3-install-en.png)
 
-**Uninstall**
-```bash
-curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall
-```
+**alist-manager**
+
+"Use command: alist or alist-manager"
+![alist-manager](/img/guide/alist-manager-en.png)
+
 
 @tab Beta
 **Install**
@@ -65,11 +63,11 @@ The default installation is in `/opt/alist`. To customize the installation path,
 @tab Latest
 ```bash
 # Install
-curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install /root
+curl -fsSL "https://alist.nn.ci/v3-en.sh" -o v3-en.sh && bash v3-en.sh install /root
 # update
-curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update /root
+curl -fsSL "https://alist.nn.ci/v3-en.sh" -o v3-en.sh && bash v3-en.sh update /root
 # Uninstall
-curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall /root
+curl -fsSL "https://alist.nn.ci/v3-en.sh" -o v3-en.sh && bash v3-en.sh uninstall /root
 ```
 
 @tab Beta
