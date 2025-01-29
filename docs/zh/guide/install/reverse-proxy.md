@@ -84,7 +84,9 @@ proxy_max_temp_file_size 0; #加上这一行
     DocumentRoot /www/myapp/public
 
     AllowEncodedSlashes NoDecode
+    ProxyPreserveHost On
     ProxyPass "/" "http://127.0.0.1:5244/" nocanon
+    ProxyPassReverse "/" "http://127.0.0.1:5244/" nocanon
 </VirtualHost>
 ```
 
