@@ -39,6 +39,16 @@ star: true
 
 :::
 
+:::danger AList ≥ 3.42.0
+
+AList版本 ≥ 3.42.0 的查看 [允许所有云盘调用其他云盘的离线下载工具](../../config/other.md)
+
+:::
+
+
+
+
+
 ## **1.Aria2**
 
 [**点击查看使用说明**](../../config/other.md)

@@ -241,3 +241,11 @@ a/5.bin     b/6.css             alias/5.bin
 If you really do n’t understand, you can test it yourself and then install the production environment by yourself
 
 :::
+
+<br/>
+
+
+
+### **Download concurrency、Download part size**
+
+You need to enable the proxy to take effect, for details, see:**https://github.com/AlistGo/alist/pull/7829**

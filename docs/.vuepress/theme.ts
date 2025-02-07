@@ -89,7 +89,7 @@ export default hopeTheme(
          * Using Giscus
          */
         provider: "Giscus",
-        repo: "alist-org/docs",
+        repo: "AlistGo/docs",
         repoId: "R_kgDOHmaM-A",
         category: "Announcements",
         categoryId: "DIC_kwDOHmaM-M4CRRXl",

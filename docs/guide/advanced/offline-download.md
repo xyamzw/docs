@@ -37,6 +37,12 @@ If you use **docker**, please map the following two default paths by yourself. (
 
 :::
 
+:::danger AList ≥ 3.42.0
+
+AList Version ≥ 3.42.0 View [Allow all cloud disks to call other cloud disks' offline download tools](../../config/other.md)
+
+:::
+
 ## **1.Aria2**
 
 [**Click to view instructions for use**](../../config/other.md)

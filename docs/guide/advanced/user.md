@@ -30,6 +30,10 @@ If you enter an incorrect password 6 times in a row, the current IP will be bloc
 
 :::
 
+<br/>
+
+
+
 ## **Base path**
 The root path that users see when he/she log in
 
@@ -54,6 +58,18 @@ A: You can create a new [alias](alias.md) storage, add all the paths you need to
 - Delete: Can delete files and folders
 - Webdav read: Can read files and folders with webdav
 - Webdav manage: Can manage files and folders with webdav
+- FTP read: Can read files and folders with FTP
+- FTP manage: Can manage files and folders with FTP
+- Read archives: Read the contents of the file in the compressed package
+- Decompress: Decompress compressed package files online
+
+<br/>
+
+
+
+## **Disabled**
+
+After checking, this user will stop using it and cannot log in. The guest account is disabled by default. If you want to enable the guest account, please close it manually.
 
 <br/>
 

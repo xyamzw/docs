@@ -22,6 +22,8 @@ star: true
 
 Set Aria2 uri and Aria2 for offline download. Aria2 needs to be installed on the same server(container if use docker) as alist.
 
+<br/>
+
 
 
 ## **Qbittorrent url**
@@ -30,11 +32,29 @@ Used to customize **Qbittorrent** parameters to configure the client to use
 
 The default value is: http://admin:adminadmin@localhost:8080/, you can modify it by referring to [specific instructions. ](../guide/advanced/offline-download.md#_2-qbittorrent)
 
+<br/>
+
+
+
+## **115、PikPak、Thunder(Pro)**
+
+**You need to add the corresponding driver first, and then set the temporary directory in the background**
+
+Allow the use of offline download tools such as 115/PikPak/Thunder in any storage. If you use offline download in 115/PikPak/Thunder storage, the file will be downloaded directly to the target directory
+
+- Otherwise, the file will be downloaded to the temporary directory configured by the user, and then transferred to the target directory
+  - For example, in the front-end page of the `GoogleDrive` storage driver, calling `Pikpak offline-download` will first download to the Pikpak temporary folder directory set in the background, and then transfer from Pikpak to the `GoogleDrive` file after the Pikpak offline download is completed
+- **https://github.com/AlistGo/alist/pull/7716**
+
+<br/>
+
 
 
 ### **Token**
 
 The token that can be used to access all API.
+
+<br/>
 
 
 

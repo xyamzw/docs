@@ -49,6 +49,7 @@ star: true
   - 守护进程：如果要使用可以自己按照手动启动AList的办法新建一个守护进程
   - 下载地址：https://github.com/meilisearch/meilisearch/releases
     - `meilisearch`文档地址：https://www.meilisearch.com/docs/learn/getting_started/installation
+    - 参考链接：https://github.com/AlistGo/alist/discussions/6830
 
 <br/>
 
@@ -99,6 +100,8 @@ star: true
 - 例子：
   - /aaa网盘
   - /bbb网盘/ccc文件夹
+
+如果不想(不会)配置这里，可以去每个驱动中将`禁用索引`选项打开（≥3.42.0）
 
 <br/>
 

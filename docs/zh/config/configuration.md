@@ -78,17 +78,18 @@ star: true
   },
   "delayed_start": 0,
   "max_connections": 0,
+  "max_concurrency": 64,
   "tls_insecure_skip_verify": true,
   "tasks": {
     "download": {
       "workers": 5,
       "max_retry": 1,
-      "task_persistant": true
+      "task_persistant": false
     },
     "transfer": {
       "workers": 5,
       "max_retry": 2,
-      "task_persistant": true
+      "task_persistant": false
     },
     "upload": {
       "workers": 5,
@@ -98,8 +99,19 @@ star: true
     "copy": {
       "workers": 5,
       "max_retry": 2,
-      "task_persistant": true
-    }
+      "task_persistant": false
+    },
+    "decompress": {
+      "workers": 5,
+      "max_retry": 2,
+      "task_persistant": false
+    },
+    "decompress_upload": {
+      "workers": 5,
+      "max_retry": 2,
+      "task_persistant": false
+    },
+    "allow_retry_canceled": false
   },
   "cors": {
     "allow_origins": [
@@ -116,7 +128,24 @@ star: true
     "enable": false,
     "port": 5246,
     "ssl": false
-  }
+  },
+  "ftp": {
+    "enable": false,
+    "listen": ":5221",
+    "find_pasv_port_attempts": 50,
+    "active_transfer_port_non_20": false,
+    "idle_timeout": 900,
+    "connection_timeout": 30,
+    "disable_active_mode": false,
+    "default_transfer_binary": false,
+    "enable_active_conn_ip_check": true,
+    "enable_pasv_conn_ip_check": true
+  },
+  "sftp": {
+    "enable": false,
+    "listen": ":5222"
+  },
+  "last_launched_version": "AList version"
 }
 ```
 
@@ -281,6 +310,8 @@ MySQL 5.x 和 8.x 也不一样。如果使用服务商提供的免费/收费数�
 
 文档链接：https://www.meilisearch.com/docs
 
+参考链接：https://github.com/AlistGo/alist/discussions/6830
+
 
 
 <br/>
@@ -389,6 +420,14 @@ temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾�
 
 
 
+### **max_concurrency**
+
+限制本地代理的最大并发，默认为64，0为不限制
+
+<br/>
+
+
+
 ### **tls_insecure_skip_verify**
 
 是否不检查 SSL 证书，关闭后如使用的网站的证书出现问题（如未包含中级证书、证书过期、证书伪造等），将不能使用该服务，开启该选项请尽量在安全的网络环境下运行程序
@@ -406,12 +445,12 @@ temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾�
     "download": {
       "workers": 5,
       "max_retry": 1,
-      "task_persistant": true
+      "task_persistant": false
     },
     "transfer": {
       "workers": 5,
       "max_retry": 2,
-      "task_persistant": true
+      "task_persistant": false
     },
     "upload": {
       "workers": 5,
@@ -421,8 +460,19 @@ temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾�
     "copy": {
       "workers": 5,
       "max_retry": 2,
-      "task_persistant": true
-    }
+      "task_persistant": false
+    },
+    "decompress": {
+      "workers": 5,
+      "max_retry": 2,
+      "task_persistant": false
+    },
+    "decompress_upload": {
+      "workers": 5,
+      "max_retry": 2,
+      "task_persistant": false
+    },
+    "allow_retry_canceled": false
   },
 ```
 
@@ -433,11 +483,16 @@ temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾�
 - **transfer**：离线下载时上传中转的任务
 - **upload**：上传任务
 - **copy**：复制任务
+- **decompress**：解压
+- **decompress_upload**：解压上传
 - **task_persistant**：任务持久化，重启 `AList` 后任务不会取消
-  - **download**：true
-  - **transfer**：true
+  - **download**：false
+  - **transfer**：false
   - **upload**：false
-  - **copy**：true
+  - **copy**：false
+  - **decompress**：false
+  - **decompress_upload**：false
+- **allow_retry_canceled**：允许用户重试之前取消的任务
 
 
 <br/>
@@ -487,3 +542,55 @@ temp_dir 为 alist 独占的临时文件夹，为避免程序中断产生垃圾�
 - `SSL`：启用HTTPS证书，默认未启用
 
 功能介绍：[点击查看](../guide/advanced/s3.md)
+
+<br/>
+
+
+
+### **ftp** <Badge text="v3.41.0" type="info" vertical="middle" />
+
+````json
+  "ftp": {
+    "enable": false,
+    "listen": ":5221",
+    "find_pasv_port_attempts": 50,
+    "active_transfer_port_non_20": false,
+    "idle_timeout": 900,
+    "connection_timeout": 30,
+    "disable_active_mode": false,
+    "default_transfer_binary": false,
+    "enable_active_conn_ip_check": true,
+    "enable_pasv_conn_ip_check": true
+  },
+````
+
+- `enable`：**ftp** 功能是否启用，默认未启用
+- `listen`：端口号
+- `find_pasv_port_attempts`：被动传输时因端口冲突而重新寻找端口的最大尝试次数
+- `active_transfer_port_non_20`：启用20以外的端口作为主动传输端口
+- `idle_timeout`：客户端无请求情况下的最长待机时间（秒）
+- `connection_timeout`：连接超时时间
+- `disable_active_mode`：禁用主动传输模式
+- `default_transfer_binary`：默认以二进制模式传输
+- `enable_active_conn_ip_check`：主动传输模式下对数据流TCP连接的客户端进行IP检查
+- `enable_pasv_conn_ip_check`：被动传输模式下对数据流TCP连接的客户端进行IP检查
+
+其它说明：[点击查看](../guide/advanced/ftp.md)
+
+<br/>
+
+
+
+### **sftp** <Badge text="v3.41.0" type="info" vertical="middle" />
+
+```json
+  "sftp": {
+    "enable": false,
+    "listen": ":5222"
+  }
+```
+
+- `enable`：**sftp** 功能是否启用，默认未启用
+- `listen`：端口号
+
+其它说明：[点击查看](../guide/advanced/ftp.md)

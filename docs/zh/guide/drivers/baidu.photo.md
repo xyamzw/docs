@@ -20,11 +20,15 @@ star: true
 # 一刻相册
 
 
-## **刷新令牌（同百度网盘的一样）**
+## **Cookie** <Badge text="v3.41.0" type="info" vertical="middle" />
 
-[点此](https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=iYCeC9g08h5vuP9UqvPHKKSVrKFXGa1v&redirect_uri=https://alist.nn.ci/tool/baidu/callback&scope=basic,netdisk&qrcode=1)获取刷新令牌。
+登录 [一刻相册](https://photo.baidu.com) 打开F12随意找到一个携带 `Cookie` 值的请求进行复制就可以
+
+![](/img/drivers/baidu/yike_cookie.png)
 
 
+
+<br/>
 
 ## **相薄ID**
 
@@ -41,6 +45,8 @@ star: true
 - {tid}:访问 **https://photo.baidu.com/youai/album/v1/list?limit=1000** 获取
   - 进入界面后`Ctrl+F`搜索上面的ID,在下面数几行就可以看到对应的 {tid} 
 
+<br/>
+
 
 
 ## **展示类型**
@@ -49,11 +55,15 @@ star: true
 
 
 
+<br/>
+
 ## **删除源文件**
 
 <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #ff0000;"></i>‪‪ ‪ 默认只是移除相册，并非真正删除，如果开启此选项删除文件后将会彻底删除，谨慎开启
 
 
+
+<br/>
 
 ### **默认使用的下载方式**
 

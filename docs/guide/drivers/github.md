@@ -65,7 +65,7 @@ Custom author name, defaulting to the owner's of the token when not filled.
 
 Required when "Author name" is filled. Required to be empty when "Author name" is empty.
 
-## **\*\*\* commit message**
+## **commit message**
 
 Custom commit message, supporting the following template variables：
 - `UserName`: the user operating the file.

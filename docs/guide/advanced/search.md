@@ -49,6 +49,7 @@ star: true
   - Daemon：If you want to use it, you can create a new daemon process in the same way as manually starting AList.
   - Download  Url：https://github.com/meilisearch/meilisearch/releases
     - `meilisearch` Docs Url：https://www.meilisearch.com/docs/learn/getting_started/installation
+    - Reference Links：https://github.com/AlistGo/alist/discussions/6830
 
 <br/>
 
@@ -100,6 +101,8 @@ Paths to be skipped during index building, one path per line, multiple lines can
    
    - /bbb network disk/ccc folder
    
+
+If you don't want to configure this, you can turn on the `disable index` option in each driver (≥3.42.0)
 
 <br/>
 

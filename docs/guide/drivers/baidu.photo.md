@@ -19,13 +19,17 @@ star: true
 
 # Moment album
 
-## **Refresh token (same as Baidu Netdisk)**
+## **Cookie** <Badge text="v3.41.0" type="info" vertical="middle" />
 
-[Click here](https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=iYCeC9g08h5vuP9UqvPHKKSVrKFXGa1v&redirect_uri=https://alist.nn.ci/tool/baidu/callback&scope=basic,netdisk&qrcode=1) to get the refresh token.
+Log in [Yike Photo Album](https://photo.baidu.com) Open F12 and find a request carrying a `Cookie` value and copy it
 
+![](/img/drivers/baidu/yike_cookie.png)
 
+ 
 
-## **album_id**
+<br/>
+
+## **Album_id**
 
 - **When the default is empty, all albums in the root directory will be displayed directly.**
 - If you want to mount a single album, you need to fill in the following content
@@ -40,15 +44,25 @@ star: true
 - {tid}: Visit **https://photo.baidu.com/youai/album/v1/list?limit=1000** to get it.
   - After entering the interface, `Ctrl+F` searches for the ID above, and you can see the corresponding {tid} in the following lines
 
+<br/>
 
 
-## **display type** 
+
+## **Display type** 
 
 Choose according to your needs
+
+
+
+<br/>
 
 ## **Delete origin**
 
 <i class="fa-solid fa-triangle-exclamation fa-lg" style="color: #ff0000;"></i>‪‪ ‪ By default, it just removes the album, not the real deletion. If you enable this option to delete the file, it will be completely deleted. Please enable it carefully.
+
+
+
+<br/>
 
 ### **The default download method used**
 
