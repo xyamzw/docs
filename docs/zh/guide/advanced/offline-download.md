@@ -16,8 +16,11 @@ sticky: true
 star: true
 ---
 
+
+
 # 离线下载
 
+## **使用前请阅读此提示**
 
 ::: warning  请仔细阅读以下提示
 
@@ -39,17 +42,30 @@ star: true
 
 :::
 
-:::danger AList ≥ 3.42.0
+::::danger AList ≥ 3.42.0
 
 AList版本 ≥ 3.42.0 的查看 [允许所有云盘调用其他云盘的离线下载工具](../../config/other.md)
 
-:::
+- ≥ 3.42.0 以上版本如果要使用离线下载要在后台配置一下临时文件夹才可以使用（否则只会显示 **SimpleHttp**）
 
 
 
+- 后台 ==>  设置 ==> 其他 （ **https://explorer.com/@manage/settings/other** ）
+  - 如果要 [使用/配置] PikPak进行离线下载
+    1. 挂载PikPak存储
+    2. 后台设置PikPak 临时目录
+    3. 选择本帐号任意文件夹当作临时目录
+       - 如果挂载多个PikPak，你想使用那个帐号进行离线下载，那就选择那个帐号的目录作为临时目录
 
 
-## **1.Aria2**
+
+**以下内容仅适用于配置说明**
+
+<br/>
+
+::::
+
+### **Aria2**
 
 [**点击查看使用说明**](../../config/other.md)
 
@@ -57,7 +73,7 @@ AList版本 ≥ 3.42.0 的查看 [允许所有云盘调用其他云盘的离线�
 
 
 
-## **2.qBittorrent**
+### **qBittorrent**
 
 （这里以Windows端举例，Linux端不清楚有没有）
 
@@ -74,8 +90,8 @@ AList版本 ≥ 3.42.0 的查看 [允许所有云盘调用其他云盘的离线�
    - 若提交离线链接后提示：**Qbittorrent not ready** 将Alist和qBittorrent都重启试试看
 
 
-2. 预设值配置查看地址：
-   - **https://github.com/alist-org/alist/blob/main/internal/bootstrap/data/setting.go#L159-L162**
+2. 预设值配置查看地址：(链接也可能会根据后续优化会有位置变动)
+   - **https://github.com/AlistGo/alist/blob/main/internal/offline_download/qbit/qbit.go#L28**
 
    - ```{ *** Value: "http://admin:adminadmin@localhost:8080/", Type: conf.TypeString, *** } ```
 
@@ -94,7 +110,7 @@ AList版本 ≥ 3.42.0 的查看 [允许所有云盘调用其他云盘的离线�
 
 
 
-### **注意事项**
+#### **注意事项**
 
 1. 在后台qBittorrent任务中出现：**`torrent parse timeout`**，解析超时
 2. 可以解析种子下载，但是在上传的时候出现 **`The system cannot find the path specified.`** 找不到路径
@@ -120,7 +136,7 @@ AList版本 ≥ 3.42.0 的查看 [允许所有云盘调用其他云盘的离线�
 
 
 
-## **3.SimpleHttp**
+### **SimpleHttp**
 
 后续补充
 
@@ -128,39 +144,24 @@ AList版本 ≥ 3.42.0 的查看 [允许所有云盘调用其他云盘的离线�
 
 
 
-## **4.PikPak**
+### **Transmission**
 
-<Badge text="v3.36.0" type="info" vertical="middle" /> 及以上版本支持在AList调用Pikpak离线下载功能
-
-右下角选择  <span style="color: rgb(24, 144, 255);"><svg fill="none" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="toolbar-toggle hope-icon hope-c-XNyZK hope-c-PJLV hope-c-PJLV-ifkxHPo-css" height="1em" width="1em" style="overflow: visible;"><path fill="currentColor" d="M7 14a2 2 0 100-4 2 2 0 000 4zM14 12a2 2 0 11-4 0 2 2 0 014 0zM17 14a2 2 0 100-4 2 2 0 000 4z"></path><path fill="currentColor" fill-rule="evenodd" d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zm-2 0c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z" clip-rule="evenodd"></path></svg></span><span style="color: rgb(24, 144, 255);"><svg fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hope-icon hope-c-XNyZK hope-c-PJLV hope-c-PJLV-iipViGO-css" tips="offline_download" height="1em" width="1em" style="overflow: visible;"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M421.83 293.82A144 144 0 00218.18 90.17M353.94 225.94a48 48 0 00-67.88-67.88"></path><path stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M192 464v-48M90.18 421.82l33.94-33.94M48 320h48"></path><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" d="M286.06 158.06L172.92 271.19a32 32 0 01-45.25 0L105 248.57a32 32 0 010-45.26L218.18 90.17M421.83 293.82L308.69 407a32 32 0 01-45.26 0l-22.62-22.63a32 32 0 010-45.26l113.13-113.17M139.6 169.98l67.88 67.89M275.36 305.75l67.89 67.88"></path> </svg></span> 离线下载选项选择`Pikpak`
-
-- 支持：`magne`、`http`、 `ed2k` 链接
-- 也支持：X、TikTok、Facebook、TG的网址链接
-
-仅支持使用Pikpak离线下载，非Pikpak会提示如下错误，**虽然添加离线下载提示成功但是在后台会提示错误**
-
-- unsupported storage driver for offline download, only Pikpak is supported
-
-![](/img/drivers/offline_download_error.png)
+后续补充
 
 <br/>
 
 
 
 
-## **5.115 Cloud**
+### **115、PikPak、迅雷(Pro)** <Badge text="v3.42.0" type="warning"/>
 
-<Badge text="v3.37.0" type="info" vertical="middle" /> 及以上版本支持在AList调用115离线下载功能
+<Badge text="v3.42.0" type="warning"/> 及以上版本支持在AList调用离线下载功能
 
-右下角选择 <span style="color: rgb(24, 144, 255);"><svg fill="none" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="toolbar-toggle hope-icon hope-c-XNyZK hope-c-PJLV hope-c-PJLV-ifkxHPo-css" height="1em" width="1em" style="overflow: visible;"><path fill="currentColor" d="M7 14a2 2 0 100-4 2 2 0 000 4zM14 12a2 2 0 11-4 0 2 2 0 014 0zM17 14a2 2 0 100-4 2 2 0 000 4z"></path><path fill="currentColor" fill-rule="evenodd" d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zm-2 0c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z" clip-rule="evenodd"></path></svg></span><span style="color: rgb(24, 144, 255);"><svg fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hope-icon hope-c-XNyZK hope-c-PJLV hope-c-PJLV-iipViGO-css" tips="offline_download" height="1em" width="1em" style="overflow: visible;"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M421.83 293.82A144 144 0 00218.18 90.17M353.94 225.94a48 48 0 00-67.88-67.88"></path><path stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M192 464v-48M90.18 421.82l33.94-33.94M48 320h48"></path><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" d="M286.06 158.06L172.92 271.19a32 32 0 01-45.25 0L105 248.57a32 32 0 010-45.26L218.18 90.17M421.83 293.82L308.69 407a32 32 0 01-45.26 0l-22.62-22.63a32 32 0 010-45.26l113.13-113.17M139.6 169.98l67.88 67.89M275.36 305.75l67.89 67.88"></path> </svg></span> 离线下载选项选择`115 Cloud`
+在后台设置其他配置临时目录选项后，前端页面右下角选择 <span style="color: rgb(24, 144, 255);"><svg fill="none" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="toolbar-toggle hope-icon hope-c-XNyZK hope-c-PJLV hope-c-PJLV-ifkxHPo-css" height="1em" width="1em" style="overflow: visible;"><path fill="currentColor" d="M7 14a2 2 0 100-4 2 2 0 000 4zM14 12a2 2 0 11-4 0 2 2 0 014 0zM17 14a2 2 0 100-4 2 2 0 000 4z"></path><path fill="currentColor" fill-rule="evenodd" d="M24 12c0 6.627-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0s12 5.373 12 12zm-2 0c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z" clip-rule="evenodd"></path></svg></span><span style="color: rgb(24, 144, 255);"><svg fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="hope-icon hope-c-XNyZK hope-c-PJLV hope-c-PJLV-iipViGO-css" tips="offline_download" height="1em" width="1em" style="overflow: visible;"><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M421.83 293.82A144 144 0 00218.18 90.17M353.94 225.94a48 48 0 00-67.88-67.88"></path><path stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M192 464v-48M90.18 421.82l33.94-33.94M48 320h48"></path><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32" d="M286.06 158.06L172.92 271.19a32 32 0 01-45.25 0L105 248.57a32 32 0 010-45.26L218.18 90.17M421.83 293.82L308.69 407a32 32 0 01-45.26 0l-22.62-22.63a32 32 0 010-45.26l113.13-113.17M139.6 169.98l67.88 67.89M275.36 305.75l67.89 67.88"></path> </svg></span> 离线下载选项选择对应的驱动离线下载功能
 
 - 支持：`magne`、`http`、 `ed2k` 链接
+  - PikPak也支持：X、TikTok、Facebook、TG的网址链接
 
-仅支持使用115个人云盘使用离线下载，非115个人云盘会提示如下错误，**虽然添加离线下载提示成功但是在后台会提示错误**
-
-- unsupported storage driver for offline download, only 115 Cloud is supported
-
-![](/img/drivers/offline_download_error.png)
 
 - 使用115离线下载的一些提示
   1. 可能会发生不同步的问题（手动右下角刷新 <span style="color: rgb(24, 144, 255);"><svg fill="currentColor" stroke-width="0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="hope-icon hope-c-XNyZK hope-c-PJLV hope-c-PJLV-ifkxHPo-css" tips="refresh" height="1em" width="1em" style="overflow: visible;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M5.463 4.433A9.961 9.961 0 0112 2c5.523 0 10 4.477 10 10 0 2.136-.67 4.116-1.81 5.74L17 12h3A8 8 0 006.46 6.228l-.997-1.795zm13.074 15.134A9.961 9.961 0 0112 22C6.477 22 2 17.523 2 12c0-2.136.67-4.116 1.81-5.74L7 12H4a8 8 0 0013.54 5.772l.997 1.795z"></path></svg></span>）
@@ -168,9 +169,3 @@ AList版本 ≥ 3.42.0 的查看 [允许所有云盘调用其他云盘的离线�
   3. 115已经在离线列表中的任务url不能再次添加
 
 <br/>
-
-
-
-## **6.Transmission**
-
-后续补充

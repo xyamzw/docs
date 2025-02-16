@@ -66,3 +66,17 @@ star: true
 | alist-windows-amd64-upx.zip | Windows | 64-bit x86 | UPX-compressed version for 64-bit x86 Windows |
 | alist-windows-amd64.zip | Windows | 64-bit x86 | For 64-bit x86 Windows systems |
 | alist-windows-arm64.zip | Windows | 64-bit ARM | For 64-bit ARM Windows systems |
+
+<br/>
+
+
+
+## **Android install AList**
+
+There are two ways to choose based on your needs
+
+1. Using **https://github.com/jing332/AListFlutter**
+2. Use `termux` to run
+- Reference: **https://anwen-anyi.github.io/index/14-android_install.html**
+
+<i class="fa-solid fa-seal-exclamation fa-beat" style="color: #ff0000;"></i> Note: Remember to authorize the APP, set the background running and battery saving policy to unlimited, otherwise it may be killed in the background, causing it to be suddenly interrupted and unusable during background use.

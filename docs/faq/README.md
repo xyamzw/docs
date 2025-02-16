@@ -6,4 +6,4 @@ category:
   - FAQ
 ---
 
-<AutoCatalog />
+<Catalog />

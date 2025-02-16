@@ -76,6 +76,32 @@ Custom commit message, supporting the following template variables：
 - `TargetName`: (when renaming) new name. (when copying and moving) the target folder name.
 - `TargetPath`: (when renaming) new path. (when copying and moving) the target path.
 
+<br/>
+
+
+
+## **Gh Proxy**
+
+Used to speed up downloading
+
+- Download the content of `Raw` and `archive` and change it to **https://gh-proxy.com/raw.githubusercontent.com**
+
+```bash title="Copy"
+https://gh-proxy.com/raw.githubusercontent.com
+```
+
+```bash title="Copy"
+https://ghfast.top/raw.githubusercontent.com
+```
+
+```bash title="Copy"
+https://ghproxy.net/raw.githubusercontent.com
+```
+
+
+
+<br/>
+
 ### **The default download method used**
 
 ```mermaid

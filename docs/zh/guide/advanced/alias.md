@@ -62,7 +62,7 @@ star: true
 
    - `路径`填写示例：
 
-     ```path
+     ```bash title="path"
      /目录1/目录a
      /目录2/目录b
      ```
@@ -73,7 +73,7 @@ star: true
 
    - `路径`填写示例：
 
-     ```path
+     ```bash title="path"
      #示例1 直接写根文件夹
      合并显示:/目录1
      合并显示:/目录2

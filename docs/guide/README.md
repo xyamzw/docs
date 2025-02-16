@@ -24,7 +24,7 @@ A file list program that supports multiple storage, and supports web browsing an
 
 ### Support storage
 
-- [x] Local storage
+- [x] [Local storage](../guide/drivers/local.md)
 - [x] [Crypt](/guide/drivers/Crypt.md)
 - [x] [Aliyundrive Open](../guide/drivers/aliyundrive_open.md)
 - [x] [aliyundrive](https://www.alipan.com/)
@@ -74,6 +74,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [163 Music Drive](../guide/drivers/163music.md)
 - [x] [halalcloud](../guide/drivers/halalcloud.md)
 - [x] [LenovoNasShare](https://pc.lenovo.com.cn)
+- [x] [GitHub API](../guide/drivers/github.md) / [GitHub Release](../guide/drivers/github_releases.md)
 - [x] [Misskey](https://misskey-hub.net/cn/docs/for-users/features/drive/)
 
 ### Discussion

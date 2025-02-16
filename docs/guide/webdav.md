@@ -20,6 +20,17 @@ star: true
 
 # WebDav
 
+::: tip
+
+<Badge text="≥ v3.42.0" type="info"/> The above versions need to open the two permissions of `Webdav Read` and `Webdav Manage` in User => Permissions
+
+- If you only read and do not modify, you only need to open `Webdav Read`
+
+
+- If you want to add, delete or modify files, you also need to open the permission of `Webdav Manage`
+
+:::
+
 ### **WebDAV config**
 
 | Name     | Value                       |

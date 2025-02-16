@@ -1,11 +1,12 @@
-import { defineUserConfig, viteBundler } from "vuepress";
-import { docsearchPlugin } from "@vuepress/plugin-docsearch";
+import { defineUserConfig } from "vuepress";
+import { viteBundler } from '@vuepress/bundler-vite'
 import { getDirname, path } from "@vuepress/utils";
 import theme from "./theme.js";
 
 const __dirname = getDirname(import.meta.url);
 
 export default defineUserConfig({
+  theme,
   base: "/",
   head: [
     [
@@ -33,15 +34,6 @@ export default defineUserConfig({
         rel: "stylesheet"
       }
     ],
-    // [
-    //   "script",
-    //   {
-    //     type: "text/javascript",
-    //     charset: "UTF-8",
-    //     src: "/global.js",
-    //     async: true,
-    //   },
-    // ],
     [
       "script",
       {},
@@ -85,14 +77,8 @@ export default defineUserConfig({
       level: [2, 3, 4, 5, 6]
     }
   },
-  
-  theme,
   plugins: [
-    docsearchPlugin({
-      appId: "ECAR405NMH",
-      apiKey: "ef408b6afab61e0362a93af95ad18150",
-      indexName: "alist",
-    }),
+
   ],
   bundler: viteBundler({
     viteOptions: {

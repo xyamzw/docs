@@ -76,6 +76,32 @@ GitHub API 不支持操作 100M 或更大的文件，不支持操作含有超过
 - `TargetName`: （重命名时）新名称（复制、移动时）目标文件夹名称。
 - `TargetPath`: （重命名时）新路径（复制、移动时）目标路径
 
+<br/>
+
+
+
+## **Gh Proxy**
+
+用于加速下载
+
+- 下载 `Raw`、`archive` 的内容要改成 **https://gh-proxy.com/raw.githubusercontent.com**
+
+```bash title="一键复制"
+https://gh-proxy.com/raw.githubusercontent.com
+```
+
+```bash title="一键复制"
+https://ghfast.top/raw.githubusercontent.com
+```
+
+```bash title="一键复制"
+https://ghproxy.net/raw.githubusercontent.com
+```
+
+
+
+<br/>
+
 ### **默认使用的下载方式**
 
 ```mermaid

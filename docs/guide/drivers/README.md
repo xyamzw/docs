@@ -12,4 +12,4 @@ dir:
 
 -----
 
-<AutoCatalog />
+<Catalog />

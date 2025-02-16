@@ -187,7 +187,7 @@ After turning on the constructive index, the more the number you build, the larg
 
   1. We use commands or tools to connect to `sqlite` database, input：**`VACUUM;`**
 
-  ```sqlite
+  ```bash title="sqlite"
   VACUUM;
   ```
 

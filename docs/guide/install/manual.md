@@ -195,7 +195,7 @@ Just double-click to start it in the folder at the same level as the Alist start
 
 **start.vbs**
 
-```vbscript
+```bash title="vbscript"
 Dim ws
 Set ws = Wscript.CreateObject("Wscript.Shell")
 ws.run "alist.exe server",vbhide
@@ -204,7 +204,7 @@ Wscript.quit
 
 **stop.vbs**
 
-```vbscript
+```bash title="vbscript"
 Dim ws
 Set ws = Wscript.CreateObject("Wscript.Shell")
 ws.run "taskkill /f /im alist.exe",0

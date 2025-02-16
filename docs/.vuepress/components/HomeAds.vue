@@ -70,15 +70,15 @@ const isApple = computed(() => {
 .vidhub {
   width: 100%;
   height: 150px;
-  @media screen and (max-width: 700px) {
-    height: 160px;
-  }
   background-image: url(/img/ss/vidhub-bg.png);
   background-size: cover;
   background-position: right;
   border-radius: 14px;
   display: block;
   padding-right: 4px;
+  @media screen and (max-width: 700px) {
+    height: 160px;
+  }
   div {
     display: flex;
     height: 100%;
@@ -107,6 +107,7 @@ const isApple = computed(() => {
         justify-content: flex-start;
         align-items: center;
         height: auto;
+        padding-bottom: 5px;
         @media screen and (max-width: 700px) {
           font-size: medium;
           word-break: break-all;
@@ -121,7 +122,6 @@ const isApple = computed(() => {
           margin-left: 4px;
           white-space: nowrap;
         }
-        padding-bottom: 5px;
       }
       .hero {
         height: auto;

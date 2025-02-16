@@ -207,7 +207,7 @@ WantedBy=multi-user.target
 
 **启动.vbs**
 
-```vbscript
+```bash title="vbscript"
 Dim ws
 Set ws = Wscript.CreateObject("Wscript.Shell")
 ws.run "alist.exe server",vbhide
@@ -216,7 +216,7 @@ Wscript.quit
 
 **停止.vbs**
 
-```vbscript
+```bash title="vbscript"
 Dim ws
 Set ws = Wscript.CreateObject("Wscript.Shell")
 ws.run "taskkill /f /im alist.exe",0

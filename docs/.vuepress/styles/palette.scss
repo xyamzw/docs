@@ -6,27 +6,34 @@ $content-width: 1080px;
 
 // image-preview
 .image-preview {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
-  }
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
-  .image-preview > img {
-     box-sizing: border-box;
-     width: 33.3% !important;
-     padding: 9px;
-     border-radius: 16px;
-  }
+.image-preview>img {
+  box-sizing: border-box;
+  width: 33.3% !important;
+  padding: 9px;
+  border-radius: 16px;
+}
 
-  @media (max-width: 719px){
-    .image-preview > img {
-      width: 50% !important;
-    }
+@media (max-width: 719px) {
+  .image-preview>img {
+    width: 50% !important;
   }
+}
 
-  @media (max-width: 419px){
-    .image-preview > img {
-      width: 100% !important;
-    }
+@media (max-width: 419px) {
+  .image-preview>img {
+    width: 100% !important;
   }
+}
+
+:root {
+  --color-primary: #2196f3;    /* 主色调 */
+  --color-danger: #f26d6d;     /* 错误/警告 */
+  --color-success: #3eaf7c;    /* 成功状态 */
+  --color-warning: #fb9b5f;    /* 提醒/警告 */
+}

@@ -16,7 +16,7 @@ sticky: true
 # this page will appear in starred articles
 star: true
 ---
-# 本地存储
+# 本机存储
 
 ## **根文件夹ID**
 

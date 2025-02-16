@@ -20,6 +20,17 @@ star: true
 
 # WebDAV
 
+::: tip
+
+<Badge text="≥ v3.42.0" type="info"/> 以上版本需要在用户 => 权限 打开 `Webdav 读取` 和 `Webdav 管理` 这两个权限
+
+- 如果只读不修改则只需要打开 `Webdav 读取` 就可以
+
+
+- 如果对文件进行增删改还需要打开 `Webdav 管理`的权限
+
+:::
+
 ## **WebDAV 配置**
 
 | Name     | Value                       |

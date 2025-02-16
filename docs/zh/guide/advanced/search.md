@@ -191,7 +191,7 @@ star: true
 
   1. 我们使用命令或者工具连接上`sqlite`数据库，输入：**`VACUUM;`**
 
-  ```sqlite
+  ```bash title="sqlite"
   VACUUM;
   ```
 

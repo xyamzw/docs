@@ -102,7 +102,7 @@ star: true
 
 来到左侧栏找到 `登录与分享`  ==填写回调参数 **`http://127.0.0.1:5234/api/auth/sso_callback`**== 
 
-```回调参数示例
+```bash title="回调参数示例"
 http://127.0.0.1:5244/api/auth/sso_callback
 ```
 
@@ -128,7 +128,7 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 微软回调参数：必须以"HTTPS"或"http://localhost开头 （我这里是本地测试就用了localhost）
 
-```回调参数示例
+```bash title="回调参数示例"
 http://localhost:5244/api/auth/sso_callback?method=sso_get_token
 http://localhost:5244/api/auth/sso_callback?method=get_sso_id
 ```
@@ -171,7 +171,7 @@ Alist 后台参数也记得写好保存，写好保存后也要回到个人资�
 
 - 应用类型 选择 Web 应用，名称随便写
 - 然后在 已获授权的重定向 URI 添加我们的两个回调参数
-```回调参数示例
+```bash title="回调参数示例"
 http://127.0.0.1:5244/api/auth/sso_callback?method=get_sso_id
 http://127.0.0.1:5244/api/auth/sso_callback?method=sso_get_token
 ```
@@ -395,7 +395,7 @@ AList单点登录绑定了钉钉，然后在  **`钉钉`**  应用内打开AList
 - `GitHub` 只需要添加一条：`http(s)://You_Url/api/auth/sso_get_token`
 - `微软`和`谷歌`两个都需要添加，可以添加多个，所以只需要新增两条就可以不用删除旧的
 
-```New
+```bash title="New"
 http(s)://You_Url/api/auth/get_sso_id
 http(s)://You_Url/api/auth/sso_get_token
 ```

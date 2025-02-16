@@ -60,6 +60,10 @@ alist-web-gh:alistGo/alist-web
 
 :::
 
+<br/>
+
+
+
 ## Show README file
 
 Off switch：
@@ -72,20 +76,32 @@ alist/
 On switch：
 ```
 alist/
-├── alist-linux-amd64.tar.gz
-├── alist-windows-amd64.zip
+├── v3.41.0/
+│   ├── alist-linux-amd64.tar.gz
+│   └── alist-windows-amd64.zip
+├── v3.40.0/
+│   ├── alist-linux-amd64.tar.gz
+│   └── alist-windows-amd64.zip
+├── LICENSE
 ├── README.md
-├── README_cn.md
-└── LICENSE
+└── README_cn.md
 ```
 
 If enabled, the total size and modification time of the folder will not be displayed.
+
+<br/>
+
+
 
 ## Token
 
 Required when accessing private repositories, and can also reduce the impact of rate limits.
 
 Log in GitHub and visit: <https://github.com/settings/tokens>
+
+<br/>
+
+
 
 ## Show all version
 
@@ -110,6 +126,34 @@ alist/
     └── alist-windows-amd64.zip
 ```
 
+<br/>
+
+
+
+## **Gh Proxy**
+
+Used to speed up downloading
+
+- Download the content of `Releases` and change it to **https://xxxx.com/https://github.com**
+
+```bash title="Copy"
+https://gh-proxy.com/github.com
+```
+
+```bash title="Copy"
+https://ghfast.top/github.com
+```
+
+```bash title="Copy"
+https://ghproxy.net/github.com
+```
+
+
+
+
+
+<br/>
+
 ### **The default download method used**
 
 ```mermaid
@@ -125,7 +169,9 @@ flowchart TB
     a1[302]:::someclass====|default|a2[user equipment]
     classDef someclass fill:#f96
     c1[local proxy]-.alternative.->a2[user equipment]
+    b1[Download proxy URL]-.alternative.->a2[user equipment]
     click a1 "../drivers/common.html#webdav-policy"
     click b1 "../drivers/common.html#webdav-policy"
+    click c1 "../drivers/common.html#webdav-policy"
 ```
 

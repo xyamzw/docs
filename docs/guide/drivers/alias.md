@@ -57,7 +57,7 @@ There are two ways to fill in
 
     -Paths filling example:
 
-      ```path
+      ```bash title="path"
       /file1/locala
       /file2/localb
       ```
@@ -68,7 +68,7 @@ There are two ways to fill in
 
     -Paths filling example:
 
-      ```path
+      ```bash title="path"
       #Example 1 Directly write the root folder
       merge: /file1
       merge: /file2

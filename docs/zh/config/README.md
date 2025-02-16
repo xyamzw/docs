@@ -6,4 +6,4 @@ category:
   - Config
 ---
 
-<AutoCatalog />
+<Catalog />

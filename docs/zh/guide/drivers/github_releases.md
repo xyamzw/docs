@@ -60,6 +60,10 @@ alist-web-gh:alistGo/alist-web
 
 :::
 
+<br/>
+
+
+
 ## 显示 README、LICENSE 文件
 
 开启前：
@@ -72,18 +76,30 @@ alist/
 开启后：
 ```
 alist/
-├── alist-linux-amd64.tar.gz
-├── alist-windows-amd64.zip
+├── v3.41.0/
+│   ├── alist-linux-amd64.tar.gz
+│   └── alist-windows-amd64.zip
+├── v3.40.0/
+│   ├── alist-linux-amd64.tar.gz
+│   └── alist-windows-amd64.zip
+├── LICENSE
 ├── README.md
-├── README_cn.md
-└── LICENSE
+└── README_cn.md
 ```
 
 开启后，不显示文件夹总大小和修改时间。
 
+<br/>
+
+
+
 ## 令牌
 
 访问私有仓库时需要，也可减少速率访问限制的影响。访问：<https://github.com/settings/tokens>
+
+<br/>
+
+
 
 ## 显示所有版本
 
@@ -108,6 +124,32 @@ alist/
     └── alist-windows-amd64.zip
 ```
 
+<br/>
+
+
+
+## **Gh Proxy**
+
+用于加速下载
+
+- 下载 `Releases` 的内容要改成 **https://xxxx.com/https://github.com**
+
+```bash title="一键复制"
+https://gh-proxy.com/github.com
+```
+
+```bash title="一键复制"
+https://ghfast.top/github.com
+```
+
+```bash title="一键复制"
+https://ghproxy.net/github.com
+```
+
+
+
+<br/>
+
 ### **默认使用的下载方式**
 
 ```mermaid
@@ -123,7 +165,9 @@ flowchart TB
     a1[302]:::someclass====|默认|a2[用户设备]
     classDef someclass fill:#f96
     c1[本机代理]-.备选.->a2[用户设备]
+    b1[代理URL]-.备选.->a2[用户设备]
     click a1 "../drivers/common.html#webdav-策略"
     click b1 "../drivers/common.html#webdav-策略"
+    click c1 "../drivers/common.html#webdav-策略"
 ```
 

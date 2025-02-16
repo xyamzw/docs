@@ -61,7 +61,13 @@ A: You can create a new [alias](alias.md) storage, add all the paths you need to
 - FTP read: Can read files and folders with FTP
 - FTP manage: Can manage files and folders with FTP
 - Read archives: Read the contents of the file in the compressed package
+  - After turning on this option, compressed package format files will be previewed by default (as shown in the figure below), which will consume some server traffic, but will not download them all.
+  - If you want to turn off the preferred preview of the compressed format, ==**Manage => Setting => Preview by default when opening archives**==, this option is turned off, and the preference is the download mode
 - Decompress: Decompress compressed package files online
+
+![](/img/advanced/user_read_archives_light.png#light)
+
+![](/img/advanced/user_read_archives_dark.png#dark)
 
 <br/>
 

@@ -66,3 +66,15 @@ star: true
 | alist-windows-amd64-upx.zip | Windows | 64位x86 | 使用UPX压缩的64位x86 Windows版本 |
 | alist-windows-amd64.zip | Windows | 64位x86 | 适用于64位x86架构的Windows系统 |
 | alist-windows-arm64.zip | Windows | 64位ARM | 适用于64位ARM架构的Windows系统 |
+
+<br/>
+
+## **Android 安装 AList**
+
+有两种办法根据自己的需求选择
+
+1. 使用 **https://github.com/jing332/AListFlutter**
+2. 使用 `termux` 运行
+   - 参考：**https://anwen-anyi.github.io/index/14-android_install.html**
+
+<i class="fa-solid fa-seal-exclamation fa-beat" style="color: #ff0000;"></i> 注意事项：记得给APP授权，后台运行、电池省电策略设置为无限制，否则可能会被杀后台导致挂在后台使用期间突然中断无法使用

@@ -24,7 +24,7 @@ category:
 
 ## Support storage
 
-- [x] 本地存储
+- [x] [本机存储](../guide/drivers/local.md)
 - [x] [Crypt](/zh/guide/drivers/Crypt.md)
 - [x] [阿里云盘Open](../guide/drivers/aliyundrive_open.md)
 - [x] [阿里云盘](https://www.alipan.com/)
@@ -72,6 +72,7 @@ category:
 - [x] [网易云音乐云盘](../guide/drivers/163music.md)
 - [x] [6盘](../guide/drivers/halalcloud.md)
 - [x] [联想家庭储存链接分享](https://pc.lenovo.com.cn)
+- [x] [GitHub API](../guide/drivers/github.md) / [GitHub Release](../guide/drivers/github_releases.md)
 - [x] [Misskey](https://misskey-hub.net/cn/docs/for-users/features/drive/)
 
 ## Discussion
