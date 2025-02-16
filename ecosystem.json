@@ -1,7 +1,7 @@
 {
   "official": [
-    { "type": "github", "repo": "alist-org/alist-proxy" },
-    { "type": "github", "repo": "alist-org/with_aria2" }
+    { "type": "github", "repo": "AlistGo/alist-proxy" },
+    { "type": "github", "repo": "AlistGo/with_aria2" }
   ],
   "community": [
     { "type": "github", "repo": "jinzhi0123/picgo-plugin-alist" },
@@ -12,6 +12,7 @@
     { "type": "github", "repo": "msterzhang/onelist" },
     { "type": "github", "repo": "moyanj/AList3SDK" },
     { "type": "github", "repo": "lym12321/Alist-SDK" },
+    { "type": "github", "repo": "lee-cq/alist-sdk" },
     { "type": "github", "repo": "power721/alist-tvbox" },
     { "type": "github", "repo": "everstu/Koolcenter_alist" },
     { "type": "github", "repo": "jing332/AListFlutter" },
