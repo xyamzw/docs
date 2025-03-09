@@ -150,5 +150,6 @@ export default defineUserConfig({
       __dirname,
       "./components/dropbox/Callback.vue"
     ),
+    "@115/Token": path.resolve(__dirname, "./components/115/Token.vue"),
   },
 });

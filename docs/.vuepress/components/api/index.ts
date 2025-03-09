@@ -1,6 +1,7 @@
 export const apis: Record<string, string> = {
   cf: "https://api.nn.ci",
   cn: "https://api.xhofe.top",
+  de: "http://api-my-api-5hw5ou-b810d8-80-75-218-107.traefik.me"
 };
 
 if (typeof location !== "undefined") {
@@ -13,9 +14,15 @@ if (typeof location !== "undefined") {
 }
 
 export const defaultApi = "cf";
-export const api = () => {
+export const api = (path?: string) => {
+  let _api = "";
   if (typeof localStorage === "undefined") {
-    return apis[defaultApi];
+    _api = apis[defaultApi];
+  } else {
+    _api = apis[localStorage.getItem("api_name") || defaultApi];
   }
-  return apis[localStorage.getItem("api_name") || defaultApi];
+  if (path) {
+    return _api + path;
+  }
+  return _api;
 };
