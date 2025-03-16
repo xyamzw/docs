@@ -42,9 +42,9 @@ The root foler to mount, defaults to `/`
 
 
 
-## **Custom crack ua**
+## ~~**Custom crack ua**~~
 
-[**UA used when using 【Native Proxy & Crack API】**](https://github.com/alist-org/alist/issues/5602#issuecomment-1831188682)
+~~[**UA used when using 【Native Proxy & Crack API】**](https://github.com/alist-org/alist/issues/5602#issuecomment-1831188682)~~ The unofficial interface is no longer available
 
 <br/>
 

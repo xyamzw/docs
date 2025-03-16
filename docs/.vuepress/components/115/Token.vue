@@ -57,7 +57,7 @@ async function getToken() {
 
 <template>
   <NSpace vertical size="large">
-    <NButton block type="primary" @click="generateQrcode" v-if="!codeVerifier" :loading="gettingQrCode">Generate Qrcode</NButton>
+    <NButton block type="primary" @click="generateQrcode" v-if="!codeVerifier" :loading="gettingQrCode">生成二维码</NButton>
     <NAlert title="Error" type="error" v-if="error1">
       {{ error1 }}
     </NAlert>
@@ -65,8 +65,8 @@ async function getToken() {
       <NSpace justify="center">
         <NImage width="300" :src="qrCode" />
       </NSpace>
-      <NAlert title="Scan the QrCode" type="info"
-        >Use 115 APP To Scan Then Click the Button Below</NAlert
+      <NAlert title="扫描二维码" type="info"
+        >使用 115 APP 扫描二维码，然后点击下方按钮</NAlert
       >
       <NButton
         size="large"
@@ -74,7 +74,7 @@ async function getToken() {
         type="info"
         block
         :loading="gettingToken"
-        >I have scan</NButton
+        >已扫码</NButton
       >
       <NAlert title="Error" type="error" v-if="error2">
         {{ error2 }}
