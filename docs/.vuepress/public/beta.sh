@@ -42,7 +42,7 @@ elif [ "$platform" = "aarch64" ]; then
   ARCH=arm64
 fi
 
-GH_PROXY='https://mirror.ghproxy.com/'
+GH_PROXY='https://ghfast.top/'
 
 if [ "$(id -u)" != "0" ]; then
   echo -e "\r\n${RED_COLOR}出错了，请使用 root 权限重试！${RES}\r\n" 1>&2

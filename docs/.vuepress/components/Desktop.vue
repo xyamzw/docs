@@ -3,7 +3,7 @@ import { NButtonGroup, NImage, NSpace, NButton, NDropdown } from "naive-ui"
 import { computed, ref } from "vue"
 // import { api } from "./api";
 
-const proxy = "https://mirror.ghproxy.com/"
+const proxy = "https://ghfast.top/"
 const res = await fetch(`https://ad-api.nn.ci/v0/app/latest`)
 const data = await res.json()
 const version = data.version as string
