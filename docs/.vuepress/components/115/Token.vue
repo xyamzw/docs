@@ -58,7 +58,7 @@ async function getToken() {
 
 <template>
   <NSpace vertical size="large">
-    <NInput v-model="appId" placeholder="APP ID, 不填则使用 Alist 默认提供" />
+    <NInput v-model:value="appId" placeholder="APP ID, 不填则使用 Alist 默认提供" />
     <NButton block type="primary" @click="generateQrcode" v-if="!codeVerifier" :loading="gettingQrCode">生成二维码</NButton>
     <NAlert title="Error" type="error" v-if="error1">
       {{ error1 }}
