@@ -2,6 +2,7 @@
 import { NButton, NSpace, NImage, NAlert, NSpin, NInput } from 'naive-ui';
 import { ref } from 'vue';
 import { api } from '../api';
+const appId = ref('');
 const codeVerifier = ref('');
 const codeResp = ref({
   uid: '',
@@ -15,7 +16,7 @@ const gettingQrCode = ref(false);
 async function generateQrcode() {
   gettingQrCode.value = true;
   error1.value = '';
-  const res = await fetch(api('/alist/115/auth_device_code'))
+  const res = await fetch(api(`/alist/115/auth_device_code?app_id=${appId.value}`))
   const data = await res.json()
   gettingQrCode.value = false;
   if (data.error) {
@@ -57,6 +58,7 @@ async function getToken() {
 
 <template>
   <NSpace vertical size="large">
+    <NInput v-model="appId" placeholder="APP ID, 不填则使用 Alist 默认提供" />
     <NButton block type="primary" @click="generateQrcode" v-if="!codeVerifier" :loading="gettingQrCode">生成二维码</NButton>
     <NAlert title="Error" type="error" v-if="error1">
       {{ error1 }}
