@@ -22,7 +22,7 @@ headerDepth: 5
 
 ::: tip
 
-Developed using [**115 Open Platform**](https://open.115.com/)
+Developed using [**115 Open Platform**](https://open.115.com/)、Please use your account in a standardized manner. If you use your account illegally, you will be responsible for the consequences if it is blocked.
 
 :::
 
@@ -45,23 +45,36 @@ Developed using [**115 Open Platform**](https://open.115.com/)
 
 ::: warning Token leakage post-processing method
 
-If the Token is accidentally leaked, you can immediately obtain a new refresh token. The previous one will become invalid. After the invalidation, the following content will be displayed:
+If you accidentally leak the Token, you can go to 115 Device Login Management to deauthorize the app.
 
-```html
-failed get objs: failed to list objs: error: refresh token error, errno: 0
+- 115 APP：【**iOS**、**Android**】 version requires ≥ 35.11.0
+- 115 Web：**https://115.com/?mode=device_manage**
+
+After invalidation, the following content will be displayed:
+
+```json
+failed get objs: failed to list objs: code: 40140116, message: no auth
 ```
+
+An account can obtain `Refresh token` twice from the same application. After the third acquisition, the `Refresh token` obtained first will become invalid. Using the first `Refresh token` will prompt the above error.
+
+![](/img/drivers/115/115_auth_b.png#light)
+![](/img/drivers/115/115_auth_h.png#dark)
 
 :::
 
-The newly obtained refresh token cannot be directly replaced in the original driver. The API interface has limited flow and cannot be refreshed continuously in a short period of time. You can only delete the original driver and add it again (if it is still prompted, wait 1 minute and try again, use a new `refresh token`)
 
-```html
-Failed init storage but storage is already created: failed init storage: error: refresh frequently, errno: 0
-```
+
+### **Get a refresh token using another APP ID**
+
+For example, use your own developer application ID to obtain a refresh token. Before obtaining a refresh token, fill in the application`APP ID` and then click the Get Refresh Token button.
+
+![](/img/drivers/115/115_b_t.png#light)
+![](/img/drivers/115/115_h_t.png#dark)
+
+
 
 <br/>
-
-
 
 ## **Root folder ID**
 

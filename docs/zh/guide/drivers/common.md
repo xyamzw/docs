@@ -20,7 +20,23 @@ star: true
 
 ## **挂载路径**
 
-唯一标识，即要挂载到的位置，如果要挂载到根目录，就是 `/`
+唯一标识，对外展示的名称，要挂载到的位置，如果要挂载到根目录，就是 `/`
+
+![](/img/drivers/common/path_b.png#light)
+
+![](/img/drivers/common/path_h.png#dark)
+
+挂载路径名称重复使用
+
+```json
+Failed create storage in database: UNIQUE constraint failed: x_storages.mount_path
+```
+
+挂载路径名称没有填写
+
+```json
+Key: 'Storage.MountPath' Error:Field validation for 'MountPath' failed on the 'required' tag
+```
 
 <br/>
 
@@ -124,15 +140,15 @@ star: true
 title: 302重定向、代理Url、本地代理
 ---
 flowchart LR
-	E(用户操作AList调用API \n 触发相关API操作云盘 \n 云盘接收到命令开始执行)
+	E(用户操作AList调用API <br/> 触发相关API操作云盘 <br/> 云盘接收到命令开始执行)
 	A[(云盘)]
 	B(你)
 	C[代理URL]
 	D{本地代理}
 	E==>A==>E
-    A==>|直接从云盘传给你中间无任何损耗 \n 302能下载多快就有多快|B
-    A-->|云盘先发送给代理URL|C-->|再由代理URL转发给你 \n 转发给你之后,你下载的速度 \n 取决于代理Url那一端上下载传转发的速度|B
-    A-->|云盘先发送给搭建AList的设备|D-->|再由搭建AList的设备转发给你 \n 转发给你之后,你下载的速度 \n 取决于搭建AList那一端下载然后上传转发的速度|B
+    A==>|直接从云盘传给你中间无任何损耗 <br/> 302能下载多快就有多快|B
+    A-->|云盘先发送给代理URL|C-->|再由代理URL转发给你 <br/> 转发给你后,你下载的速度 <br/> 取决于代理Url那一端上下载传转发的速度|B
+    A-->|云盘先发送给搭建AList的设备|D-->|由搭建AList的设备转发给你 <br/> 转发给你之后,你下载速度 <br/> 取决于搭建AList那一端下载然后上传转发的速度|B
 
 ```
 

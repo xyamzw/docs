@@ -20,7 +20,23 @@ star: true
 
 ## **Mount Path**
 
-Unique identifier, that is the location you want to mount to, if you want to mount to the root directory, it is `/`
+Unique identifier, the name displayed to the outside world, that is, the location to be mounted. If you want to mount to the root directory, it is `/`
+
+![](/img/drivers/common/path_b.png#light)
+
+![](/img/drivers/common/path_h.png#dark)
+
+Repeated use of mount path name
+
+```json
+Failed create storage in database: UNIQUE constraint failed: x_storages.mount_path
+```
+
+The mount path name is not filled in
+
+```json
+Key: 'Storage.MountPath' Error:Field validation for 'MountPath' failed on the 'required' tag
+```
 
 <br/>
 
