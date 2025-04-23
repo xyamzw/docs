@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-order: 11
+order: 71
 # A page can have multiple categories
 category:
   - Guide
@@ -17,7 +17,7 @@ sticky: true
 star: true
 ---
 
-# 百度网盘分享链接
+# 百度分享
 
 挂载百度网盘分享链接，可供下载，无上传编辑等功能，api非官方。
 
@@ -74,9 +74,9 @@ BDUSS由cookie中提取
 
 不能突破速度限制，请合理使用。
 
+<br/>
 
-
-<!-- @include: baidu.md{142-194} -->
+<!-- @include: baidu.md{133-199} -->
 
 
 

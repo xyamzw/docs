@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-order: 26
+order: 211
 # A page can have multiple categories
 category:
   - Guide
@@ -11,13 +11,14 @@ tag:
   - Storage
   - Guide
   - "本地代理"
+  - "官方"
 # this page is sticky in article list
 sticky: true
 # this page will appear in starred articles
 star: true
 ---
 
-# MEGA 网盘
+# MEGA
 
 MEGA官网：**https://mega.nz/login**
 

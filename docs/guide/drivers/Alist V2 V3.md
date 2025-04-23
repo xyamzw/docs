@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-order: 32
+order: 256
 # A page can have multiple categories
 category:
   - Guide
@@ -17,7 +17,7 @@ sticky: true
 # this page will appear in starred articles
 star: true
 ---
-# Alist V2/V3
+# AList V2/V3
 
 
 

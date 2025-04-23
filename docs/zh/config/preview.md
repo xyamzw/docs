@@ -103,17 +103,22 @@ interface {
 }
 ```
 
+部署和使用 `OnlyOffice` 参考：
+
+- https://github.com/AlistGo/alist/discussions/3255
+- https://github.com/AlistGo/alist/discussions/8271
+
 :::
 
 ## **音频封面**
 
 歌曲无播放封面时显示的默认封面。
 
-## **音频自动播放**
+## **自动播放音频**
 
 是否自动播放音频文件。
 
-## **视频自动播放**
+## **自动播放视频**
 
 是否自动播放视频文件。
 
@@ -125,9 +130,22 @@ interface {
 
 ![](/img/advanced/user_read_archives_dark.png#dark)
 
+## **Readme 自动渲染**
+
+关闭后 `readme.md`文件的内容将不会自动渲染在文件最底部
+
+## **过滤 Readme 文件中的脚本**
+
+防止病毒脚本攻击，开启后会以文本形式显示 `readme.md` 内容，具体效果如下内容
+
+- 包含但不限于 删除线、表格、任务列表等以文本形式展示
+
+![](/img/config/readme_b.png#light)
+![](/img/config/readme_h.png#dark)
+
+
+
 <br/>
-
-
 
 -----
 

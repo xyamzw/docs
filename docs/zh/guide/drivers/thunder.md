@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-order: 17
+order: 151
 # A page can have multiple categories
 category:
   - Guide
@@ -18,7 +18,7 @@ sticky: true
 star: true
 ---
 
-# 迅雷云盘/X/浏览器
+# 迅雷云盘 / X / 浏览器
 
 :::tip
 

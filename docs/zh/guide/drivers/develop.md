@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-code
 # This control sidebar order
-order: 99
+order: 999
 # A page can have multiple categories
 category:
   - Guide

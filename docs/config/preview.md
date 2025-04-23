@@ -102,6 +102,11 @@ If you want to use self-deployed onlyoffice to preview office files, you can add
   }
 }
 ```
+Deploying and using `OnlyOffice` Reference:
+
+- https://github.com/AlistGo/alist/discussions/3255
+- https://github.com/AlistGo/alist/discussions/8271
+
 :::
 
 ### **Audio cover**
@@ -124,9 +129,22 @@ After turning on this option, compressed package format files will be previewed 
 
 ![](/img/advanced/user_read_archives_dark.png#dark)
 
+### **Readme autorender**
+
+After closing, the content of the `readme.md` file will not be automatically rendered at the bottom of the file.
+
+### **Filter readme scripts**
+
+Prevent virus script attacks. After turning it on, the contents of `readme.md` will be displayed in text form. The specific effects are as follows
+
+- Including but not limited to strikethrough, tables, task lists, etc. displayed in text form
+
+![](/img/config/readme_b.png#light)
+![](/img/config/readme_h.png#dark)
+
+
+
 <br/>
-
-
 
 -----
 

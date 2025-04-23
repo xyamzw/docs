@@ -32,6 +32,17 @@ Password required to access this path
 
 - Meta information password will not take effect when accessed using `WebDav`
 
+::: danger Notes
+
+If you want the password to be effective in subfolders, please check `Apply to sub folder` after the password. Do not check `Write` and then check `Apply to sub folder`
+
+The correct check example is shown below. If you configure the options correctly, if you check the wrong option `Write` and then check `Apply to sub folder`, it will cause anyone to have permission to write dangerous operations
+
+![](/img/advanced/meta/password_b.png#light)
+![](/img/advanced/meta/password_h.png#dark)
+
+:::
+
 <br/>
 
 

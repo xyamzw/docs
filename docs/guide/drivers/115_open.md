@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-order: 25
+order: 21
 # A page can have multiple categories
 category:
   - Guide
@@ -11,6 +11,7 @@ tag:
   - Storage
   - Guide
   - "302"
+  - Official
 # this page is sticky in article list
 sticky: true
 # this page will appear in starred articles
@@ -22,7 +23,13 @@ headerDepth: 5
 
 ::: tip
 
-Developed using [**115 Open Platform**](https://open.115.com/)、Please use your account in a standardized manner. If you use your account illegally, you will be responsible for the consequences if it is blocked.
+Developed using the official [**115 Open Platform API**](https://open.115.com)
+
+:::
+
+::: danger Please read the precautions carefully
+
+Please use your account in a standardized manner. Do not use it for distribution services including but not limited to **`multi-person sharing`**, **`image hosting, software hosting`** and **`video external links to video websites for playback`**, as well as some other irregular uses not mentioned above. You will be responsible for the consequences of your account being blocked.
 
 :::
 
@@ -33,6 +40,10 @@ Developed using [**115 Open Platform**](https://open.115.com/)、Please use your
 ## **Get refresh token**
 
 - **https://alist.nn.ci/tool/115/token**
+
+Scan the QR code with your phone and click the blue button to get `refresh token`
+
+When filling in the drive information, you only need to fill in **`refresh token`**, and you don’t need to fill in `access token`
 
 ![](/img/drivers/115/115_b.png#light)
 ![](/img/drivers/115/115_h.png#dark)

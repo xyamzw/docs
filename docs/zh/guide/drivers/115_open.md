@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-order: 25
+order: 21
 # A page can have multiple categories
 category:
   - Guide
@@ -11,6 +11,7 @@ tag:
   - Storage
   - Guide
   - "302"
+  - "官方"
 # this page is sticky in article list
 sticky: true
 # this page will appear in starred articles
@@ -22,7 +23,13 @@ headerDepth: 5
 
 ::: tip
 
-使用  [**115开放平台**](https://open.115.com/) 开发、请规范使用帐号、非法使用帐号被封禁后果自负。
+使用官方  [**115开放平台 API**](https://open.115.com) 开发
+
+:::
+
+::: danger 请仔细阅读注意事项
+
+请规范使用帐号，请勿包含但不限于 **`多人共享使用`**、**`图床、软件床`** 和 **`视频外链到视频网站播放`** 等分发服务以及一些没有提到的不规范使用的方式导致帐号被封禁后果自负
 
 :::
 
@@ -35,6 +42,8 @@ headerDepth: 5
 - **https://alist.nn.ci/zh/tool/115/token**
 
 手机扫码后点击蓝色按钮即可获取 `refresh token`
+
+填写时只需要填写 **`refresh token`** 就可以，不需要填写 `access token`
 
 ![](/img/drivers/115/115_b.png#light)
 ![](/img/drivers/115/115_h.png#dark)

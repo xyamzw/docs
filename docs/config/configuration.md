@@ -63,7 +63,8 @@ After modifying the configuration file, restart AList for changes to take effect
     "cert_file": "",
     "key_file": "",
     "unix_file": "",
-    "unix_file_perm": ""
+    "unix_file_perm": "",
+    "enable_h2c": false
   },
   "temp_dir": "data\\temp",
   "bleve_dir": "data\\bleve",
@@ -328,7 +329,8 @@ The configuration of scheme. Set this field if using HTTPS.
     "cert_file": "data\\cert.crt",  // Path of cert file
     "key_file": "data\\key.key",    // Path of key file
     "unix_file": "",        // Unix socket file path to listen on, default empty, if you want to use unix socket, set it to non empty
-    "unix_file_perm": ""    // Unix socket file permission, set to the appropriate permissions
+    "unix_file_perm": "",   // Unix socket file permission, set to the appropriate permissions
+    "enable_h2c": false		// Support HTTP/2 Cleartext (H2C) protocol for alist's http service. The cleartext HTTP/2 protocol supports nginx's grpc_pass after it is enabled - https://github.com/AlistGo/alist/pull/8294
   },
 ```
 
@@ -486,6 +488,18 @@ Configuration for background task threads.
   - **decompress_upload**：false
 - **allow_retry_canceled**：Allow users to retry previously canceled tasks
 
+-----
+
+A new **transmission** configuration path is added to the background configuration: `/@manage/settings/traffic`
+
+- Supports limiting the number of threads and transmission uplink and downlink rates of ==6 tasks==
+- **https://github.com/AlistGo/alist/pull/7948**
+
+Operation principle: If `settings/traffic` does not have a thread number field (first run or just upgraded from an old version), `settings/traffic` will be initialized with the value of the config configuration file. If `settings/traffic` has a value, the thread configuration information of config will be ignored
+
+- **https://github.com/AlistGo/alist/pull/7948#issuecomment-2775174617**
+
+- Summary: For newly installed or upgraded versions, the values will be read from the configuration file to initialize the `traffic` configuration information. Subsequent modifications to the thread only need to be modified in the background.
 
 <br/>
 

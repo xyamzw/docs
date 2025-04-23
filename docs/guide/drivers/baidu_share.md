@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-order: 12
+order: 71
 # A page can have multiple categories
 category:
   - Guide
@@ -74,9 +74,9 @@ Since we don't have an official document, there might be some compatible problem
 
 We can't break those limits from Baidu and you should follow the official laws.
 
+<br/>
 
-
-<!-- @include: baidu.md{74-125} --> 
+<!-- @include: baidu.md{87-148} --> 
 
 
 

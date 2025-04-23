@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-order: 12
+order: 66
 # A page can have multiple categories
 category:
   - Guide
@@ -11,6 +11,7 @@ tag:
   - Storage
   - Guide
   - "302"
+  - Official
 # this page is sticky in article list
 sticky: true
 # this page will appear in starred articles
@@ -58,12 +59,24 @@ The root foler to mount, defaults to `/`
   -  ~~Or turn on the Web proxy, you do not need to modify the UA (you need a large broadband to use it stably)~~
   -  ~~It is limited to play/download **`video (only tested in the mp4 format other formats are not tested)`**,If it is other format files, such a prompt will appear~~
   -  ~~This is not a mistake, this is a limit, please do not panic.~~
+  
+- Crack video: unofficial video interface, dedicated to playing videos, the following errors will occur in non-video formats, which is normal
+  - The browser also needs to modify the UA: `pan.baidu.com` or `netdisk` In short, if it is not the browser User-Agent, the video can be played.
+  
+  - The specific situation is the same as the previous unofficial interface usage
+  - ==The continuous use time is unknown, and 100% availability is not guaranteed==
+  
 
-```json{2-4}
+```json{2-4,7-9}
 {
 	error_code: 31119,
 	error_msg: "hit black userlist , hit illeage dlna",
 	request_id: 541111111111111140
+},
+{
+	error_code: 31329,
+	error_msg: "hit black userlist , hit illeage dlna",
+	request_id: 921111381111111100
 }
 ```
 
@@ -84,7 +97,7 @@ It will only be useful if a member finishes modifying **`"User-Agent"`** (choose
 If you don’t change **`"User-Agent"`**, you can enable ==Web Agent==, the disadvantage is that you need to build an Alist machine for transfer, that is to say, you need a large broadband to help you transfer
 
 <div>
-    <p style="text-align: center;"><span>Tutorial on how to modify UA in web page 302 mode: <br/></span>On the left is<span style="color:red;font-weight: bold;font-size: xx-large;">『Official』</span>API，On the right is the<span style="color:blue;font-weight: bold;font-size: xx-large;">『Crack』</span>API</p>
+    <p style="text-align: center;"><span>Tutorial on how to modify UA in web page 302 mode: <br/></span>On the left is<span style="color:red;font-weight: bold;font-size: xx-large;">『Official』</span>API，On the right is the<span style="color:blue;font-weight: bold;font-size: xx-large;">『Crack video』</span>API</p>
     <div class="image-preview">
         <video width="360" height="240" controls>
             <source src="https://r2.izyt.cc/alist/baidu/%E7%99%BE%E5%BA%A6%E5%AE%98%E6%96%B9%E6%8E%A5%E5%8F%A3.mp4" type="video/mp4">
@@ -94,6 +107,7 @@ If you don’t change **`"User-Agent"`**, you can enable ==Web Agent==, the disa
         </video>
     </div>
 </div>
+
 
 :::tabs#ua
 
@@ -133,6 +147,10 @@ If you use the webpage to modify the **`user-agent`**, you do not need to config
 :::
 
 ::::
+
+<br/>
+
+
 
 ## **Upload Config**
 

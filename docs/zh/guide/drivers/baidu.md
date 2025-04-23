@@ -2,7 +2,7 @@
 # This is the icon of the page
 icon: iconfont icon-state
 # This control sidebar order
-order: 12
+order: 66
 # A page can have multiple categories
 category:
   - Guide
@@ -11,6 +11,7 @@ tag:
   - Storage
   - Guide
   - "302"
+  - "官方"
 # this page is sticky in article list
 sticky: true
 # this page will appear in starred articles
@@ -104,11 +105,24 @@ flowchart TB
   -  ~~仅限于播放/下载 **`视频(只测试了mp4格式其他格式未测试)`**，其他类型文件的会出现下方提示~~
   -  ~~如果出现下面的提示请勿担心，这不是错误不是Bug，这只是限制，请勿填写`issue`上报.~~
 
-```json{2-4}
+- Crack video：非官方视频接口，播放视频专用，非视频格式会出现以下错误 是正常情况
+
+  - 浏览器查看也需要修改UA：`pan.baidu.com` 或者 `netdisk` 总之不是浏览器 User-Agent 都能播放视频
+
+  - 具体情况和之前的非官方接口用法一样
+  - ==可以持续使用时间未知，不保证100%可用性==
+
+
+```json{2-4,7-9}
 {
 	error_code: 31119,
 	error_msg: "hit black userlist , hit illeage dlna",
 	request_id: 541111111111111140
+}
+{
+	error_code: 31329,
+	error_msg: "hit black userlist , hit illeage dlna",
+	request_id: 921111381111111100
 }
 ```
 
@@ -183,6 +197,10 @@ flowchart TB
 :::
 
 ::::
+
+<br/>
+
+
 
 ## **上传配置**
 
