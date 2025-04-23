@@ -22,6 +22,9 @@ star: true
 
 For specific usage, please refer to the `README.md` in the corresponding repository.
 
+### Claw Cloud Run
+[https://console.run.claw.cloud/signin](https://console.run.claw.cloud/signin?link=UTMO60WWUZKY)
+
 ### **Koyeb**
 https://github.com/alist-org/alist-koyeb
 
@@ -33,6 +36,3 @@ https://github.com/alist-org/alist-heroku-postgres
 
 ### **Sealos**
 [![](https://raw.githubusercontent.com/labring-actions/templates/main/Deploy-on-Sealos.svg)](https://cloud.sealos.io/?openapp=system-template%3FtemplateName%3Dalist)
-
-### **WeKube**
-[![](https://wekube.com/images/deploy-on-wekube.svg)](https://wekube.com/zh-Hans/market/66e0cbc77cc994d6f07a3be5)
