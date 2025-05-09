@@ -1,4 +1,5 @@
-FROM halverneus/static-file-server:latest
+FROM caddy:latest
 
 # Copy your static files
-COPY . /web
+COPY . /www/html
+COPY ./Caddyfile /etc/caddy/Caddyfile
