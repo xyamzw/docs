@@ -10,15 +10,6 @@ export default defineUserConfig({
   base: "/docs/", // For Github Pages
   head: [
     [
-      "script",
-      {
-        type: "text/javascript",
-        charset: "UTF-8",
-        src: "https://cdn.wwads.cn/js/makemoney.js",
-        // async: true,
-      },
-    ],
-    [
       "link",
       {
         type: "text/css",
