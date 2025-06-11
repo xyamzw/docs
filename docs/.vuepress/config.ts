@@ -41,14 +41,14 @@ export default defineUserConfig({
         s.parentNode.insertBefore(hm, s);
       })();`,
     ],
-    [
-      "script",
-      {
-        src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6488351372249466",
-        async: true,
-        crossorigin: "anonymous",
-      },
-    ],
+    // [
+    //   "script",
+    //   {
+    //     src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6488351372249466",
+    //     async: true,
+    //     crossorigin: "anonymous",
+    //   },
+    // ],
   ],
 
   locales: {
