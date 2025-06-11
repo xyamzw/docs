@@ -34,9 +34,9 @@ star: true
 ### **根文件夹ID**
 
 - 要添加的目录的pathname，不填默认为根目录，如：
-  - [https://alist.nn.ci](https://alist.nn.ci/) -> `/`
-  - https://alist.nn.ci/a -> `/a`
-  - https://alist.nn.ci/a/b -> `/a/b`
+  - [https://alist.example.com](https://alist.example.com/) -> `/`
+  - https://alist.example.com/a -> `/a`
+  - https://alist.example.com/a/b -> `/a/b`
 
 
 
@@ -167,7 +167,7 @@ failed get objs: failed to list objs: request failed,code: 400, message: Key: 'L
 
 （这是让对方给你的，一般没有人会交出自己的token给外人）
 
-- V2获取方式：前往V2文档进行查看 --> **https://alist-doc.nn.ci/docs/driver/alist#token**
+- V2获取方式：前往V2文档进行查看 --> **https://alist-doc.example.com/docs/driver/alist#token**
 - V3获取方式：后台 --> 设置 --> 其他 --> **`令牌`**
 
 ::::

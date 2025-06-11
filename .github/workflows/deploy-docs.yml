@@ -49,5 +49,4 @@ jobs:
           # external_repository: alist-org/alist-org.github.io
           publish_branch: gh-pages
           publish_dir: docs/.vuepress/dist
-          cname: alist.nn.ci
-
+          # cname: 

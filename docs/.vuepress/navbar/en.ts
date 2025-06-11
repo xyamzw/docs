@@ -24,8 +24,8 @@ export const en = navbar([
     icon: "iconfont icon-more",
     children: [
       { text: "Demo", link: "https://alist.pages.dev/" },
-      { text: "V2", link: "https://alist-doc.nn.ci" },
-      { text: "Desktop", link: "https://ad.nn.ci/" },
+      { text: "V2", link: "https://alist-doc.example.com" },
+      { text: "Desktop", link: "https://ad.example.com/" },
     ],
   },
   {

@@ -83,7 +83,7 @@ Please go to our [discussion forum](https://github.com/Xhofe/alist/discussions) 
 
 ### Demo
 
-- https://al.nn.ci
+- https://al.example.com
 
 ### Special sponsors
 

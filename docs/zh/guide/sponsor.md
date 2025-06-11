@@ -22,9 +22,9 @@ star: true
 
 如果你觉得这个项目对你有帮助，不妨考虑给我买杯奶茶😄。
 
-- 购买 AList桌面版：https://r.nn.ci/ad
+- 购买 AList桌面版：https://r.example.com/ad
 - Buy me a coffee: https://ko-fi.com/xhofe
-- 赞助我: https://sp.nn.ci
+- 赞助我: https://sp.example.com
 - 支付宝/微信支付/QQ支付:
 
 :::tabs
@@ -39,7 +39,7 @@ star: true
 
 :::
 
-感谢以下赞助者，以及[sponsor-me](https://sp.nn.ci/list)的朋友们
+感谢以下赞助者，以及[sponsor-me](https://sp.example.com/list)的朋友们
 
 :::details 2023
 - *轶

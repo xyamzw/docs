@@ -22,9 +22,9 @@ star: true
 
 If you think this project is helpful to you, you may wish to consider buying me a cup of milk tea😄.
 
-- Buy `AList Desktop`: https://r.nn.ci/ad
+- Buy `AList Desktop`: https://r.example.com/ad
 - Buy me a coffee: https://ko-fi.com/xhofe
-- Sponsor-me: https://sp.nn.ci
+- Sponsor-me: https://sp.example.com
 - Alipay/WechatPay/QQPay:
 
 :::tabs
@@ -39,7 +39,7 @@ If you think this project is helpful to you, you may wish to consider buying me 
 
 :::
 
-Thanks to the following sponsors, and friends in [sponsor-me](https://sp.nn.ci/list)
+Thanks to the following sponsors, and friends in [sponsor-me](https://sp.example.com/list)
 
 :::details 2023
 - *轶
