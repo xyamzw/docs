@@ -12,11 +12,10 @@ category:
 新版本（V3 及更高版本）与 V2 不兼容，因此如果您从 V2 升级，我们建议您完全重新安装 Alist。
 :::
 
-[![](https://img.shields.io/github/release/Xhofe/alist?style=flat-square)](https://github.com/Xhofe/alist/releases/latest)
-[![GitHub Discussions](https://img.shields.io/github/discussions/Xhofe/alist?color=%23ED8936&style=flat-square)](https://github.com/Xhofe/alist/discussions)
-[![](https://img.shields.io/github/actions/workflow/status/Xhofe/alist/build.yml?style=flat-square)](https://github.com/Xhofe/alist/actions?query=workflow%3ABuild)
-[![](https://img.shields.io/github/downloads/Xhofe/alist/total?style=flat-square&color=%239F7AEA)](https://github.com/Xhofe/alist/releases)
-[![](https://img.shields.io/badge/%24-donate-ff69b4.svg?style=flat-square)](https://pay.xhofe.top)
+[![](https://img.shields.io/github/release/OpenListTeam/OpenList?style=flat-square)](https://github.com/OpenListTeam/OpenList/releases/latest)
+[![GitHub Discussions](https://img.shields.io/github/discussions/OpenListTeam/OpenList?color=%23ED8936&style=flat-square)](https://github.com/OpenListTeam/OpenList/discussions)
+[![](https://img.shields.io/github/actions/workflow/status/OpenListTeam/OpenList/build.yml?style=flat-square)](https://github.com/OpenListTeam/OpenList/actions?query=workflow%3ABuild)
+[![](https://img.shields.io/github/downloads/OpenListTeam/OpenList/total?style=flat-square&color=%239F7AEA)](https://github.com/OpenListTeam/OpenList/releases)
 
 ## What's this
 
@@ -54,7 +53,7 @@ category:
 - [x] [Mega.nz](https://mega.nz)
 - [x] [一刻相册](https://photo.baidu.com/)
 - [x] [TeraBox -海外百度](https://www.terabox.com/)
-- [x] [AList v2/v3](../guide/drivers/Alist%20V2%20V3.md)
+- [x] [OpenList v2/v3](../guide/drivers/Alist%20V2%20V3.md)
 - [x] SMB
 - [x] [别名](../guide/advanced/alias.md)
 - [x] [115](https://115.com/)
@@ -75,20 +74,18 @@ category:
 - [x] [GitHub API](../guide/drivers/github.md) / [GitHub Release](../guide/drivers/github_releases.md)
 - [x] [Misskey](https://misskey-hub.net/cn/docs/for-users/features/drive/)
 
-## Discussion
+## Discussions
 
-一般问题请到[讨论论坛](https://github.com/Xhofe/alist/discussions) ，**issue仅针对错误报告和功能请求。**
+一般问题请到 [Discussions](https://github.com/OpenListTeam/OpenList/discussions) ，**Issues 仅针对错误报告和功能请求。**
 
 ## 演示
 
-- https://al.example.com
+N/A
 
 ## 特别赞助
 
-- [VidHub](https://zh.okaapps.com/product/1659622164?ref=alist) - 苹果生态下优雅的网盘视频播放器，iPhone，iPad，Mac，Apple TV全平台支持。
-- [亚洲云](https://www.asiayun.com/aff/QQCOOQKZ) - 高防服务器|服务器租用|福州高防|广东电信|香港服务器|美国服务器|海外服务器 - 国内靠谱的企业级云计算服务提供商 (国内API服务器赞助)
-- [找资源](http://zhaoziyuan2.cc/) - 阿里云盘资源搜索引擎
+N/A
 
 ## 许可
 
-`AList` 是在 AGPL-3.0 许可下许可的开源软件。
+`OpenList` 是在 AGPL-3.0 许可下许可的开源软件。

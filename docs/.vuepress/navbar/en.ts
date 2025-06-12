@@ -11,26 +11,26 @@ export const en = navbar([
     text: "Community",
     icon: "iconfont icon-community",
     children: [
-      // {
-      //   text: "Discussion",
-      //   link: "https://github.com/alist-org/alist/discussions",
-      // },
-      // { text: "Telegram", link: "https://t.me/alist_chat" },
+      {
+        text: "Discussion",
+        link: "https://github.com/OpenListTeam/OpenList/discussions",
+      },
+      { text: "Telegram", link: "https://t.me/+BYuDkV2f-ds2ODE1" },
       // { text: "Discord", link: "https://discord.gg/F4ymsH4xv2" },
     ],
   },
-  {
-    text: "More",
-    icon: "iconfont icon-more",
-    children: [
-      { text: "Demo", link: "https://alist.pages.dev/" },
-      { text: "V2", link: "https://alist-doc.example.com" },
-      { text: "Desktop", link: "https://ad.example.com/" },
-    ],
-  },
+  // {
+  //   text: "More",
+  //   icon: "iconfont icon-more",
+  //   children: [
+  //     { text: "Demo", link: "https://alist.pages.dev/" },
+  //     { text: "V2", link: "https://alist-doc.example.com" },
+  //     { text: "Desktop", link: "https://ad.example.com/" },
+  //   ],
+  // },
   {
     text: "Github",
     icon: "iconfont icon-github",
-    link: "https://github.com/alist-org/alist",
+    link: "https://github.com/OpenListTeam/OpenList",
   },
 ]);

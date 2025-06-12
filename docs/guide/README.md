@@ -12,11 +12,10 @@ category:
 New versions (V3 and later) are not compatible with V2, so we recommend that you full reinstall Alist if you are upgrading from V2.
 :::
 
-[![](https://img.shields.io/github/release/Xhofe/alist?style=flat-square)](https://github.com/Xhofe/alist/releases/latest)
-[![GitHub Discussions](https://img.shields.io/github/discussions/Xhofe/alist?color=%23ED8936&style=flat-square)](https://github.com/Xhofe/alist/discussions)
-[![](https://img.shields.io/github/actions/workflow/status/Xhofe/alist/build.yml?style=flat-square)](https://github.com/Xhofe/alist/actions?query=workflow%3ABuild)
-[![](https://img.shields.io/github/downloads/Xhofe/alist/total?style=flat-square&color=%239F7AEA)](https://github.com/Xhofe/alist/releases)
-[![](https://img.shields.io/badge/%24-donate-ff69b4.svg?style=flat-square)](https://pay.xhofe.top)
+[![](https://img.shields.io/github/release/OpenListTeam/OpenList?style=flat-square)](https://github.com/OpenListTeam/OpenList/releases/latest)
+[![GitHub Discussions](https://img.shields.io/github/discussions/OpenListTeam/OpenList?color=%23ED8936&style=flat-square)](https://github.com/OpenListTeam/OpenList/discussions)
+[![](https://img.shields.io/github/actions/workflow/status/OpenListTeam/OpenList/build.yml?style=flat-square)](https://github.com/OpenListTeam/OpenList/actions?query=workflow%3ABuild)
+[![](https://img.shields.io/github/downloads/OpenListTeam/OpenList/total?style=flat-square&color=%239F7AEA)](https://github.com/OpenListTeam/OpenList/releases)
 
 ### What's this
 
@@ -31,7 +30,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [OneDrive](./drivers/onedrive.md) /[APP](./drivers/onedrive_app.md)/ Sharepoint ([global](https://www.office.com/), [cn](https://portal.partner.microsoftonline.cn),de,us）
 - [x] [GoogleDrive](https://drive.google.com/)
 - [x] [123pan/Share/Link](https://www.123pan.com/)
-- [x] [Alist](https://github.com/Xhofe/alist)
+- [x] [OpenList](https://github.com/OpenListTeam/OpenList)
 - [x] FTP
 - [x] SFTP
 - [x] [PikPak / share](https://www.mypikpak.com/)
@@ -56,7 +55,7 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [Mega.nz](https://mega.nz)
 - [x] [Baidu photo](https://photo.baidu.com/)
 - [x] [TeraBox](https://www.terabox.com/)
-- [x] [AList v2/v3](../guide/drivers/Alist%20V2%20V3.md)
+- [x] [OpenList v2/v3](../guide/drivers/Alist%20V2%20V3.md)
 - [x] SMB
 - [x] [alias](../guide/advanced/alias.md)
 - [x] [115](https://115.com/)
@@ -77,20 +76,18 @@ A file list program that supports multiple storage, and supports web browsing an
 - [x] [GitHub API](../guide/drivers/github.md) / [GitHub Release](../guide/drivers/github_releases.md)
 - [x] [Misskey](https://misskey-hub.net/cn/docs/for-users/features/drive/)
 
-### Discussion
+### Discussions
 
-Please go to our [discussion forum](https://github.com/Xhofe/alist/discussions) for general questions, **issues are for bug reports and feature request only.**
+Please go to [Github Discussions](https://github.com/OpenListTeam/OpenList/discussions) for general questions, **Issues are for bug reports and feature request only.**
 
 ### Demo
 
-- https://al.example.com
+N/A
 
 ### Special sponsors
 
-- [VidHub](https://apps.apple.com/app/apple-store/id1659622164?pt=118612019&ct=alist&mt=8) - An elegant cloud video player within the Apple ecosystem. Support for iPhone, iPad, Mac, and Apple TV.
-- [亚洲云](https://www.asiayun.com/aff/QQCOOQKZ) - 高防服务器|服务器租用|福州高防|广东电信|香港服务器|美国服务器|海外服务器 - 国内靠谱的企业级云计算服务提供商 (sponsored Chinese API server)
-- [找资源](http://zhaoziyuan2.cc/) - 阿里云盘资源搜索引擎
+N/A
 
 ### License
 
-The `AList` is open-source software licensed under the AGPL-3.0 license.
+The `OpenList` is open-source software licensed under the AGPL-3.0 license.

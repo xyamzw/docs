@@ -17,7 +17,7 @@ star: true
 ---
 
 
-# AList System Architecture Reference
+# OpenList System Architecture Reference
 
 | Filename | Operating System | CPU Architecture | Description |
 |----------|------------------|------------------|-------------|
@@ -71,7 +71,7 @@ star: true
 
 
 
-## **Android install AList**
+## **Android install OpenList**
 
 There are two ways to choose based on your needs
 

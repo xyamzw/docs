@@ -11,26 +11,26 @@ export const zh = navbar([
     text: "社区",
     icon: "iconfont icon-community",
     children: [
-      // {
-      //   text: "Discussion",
-      //   link: "https://github.com/alist-org/alist/discussions",
-      // },
-      // { text: "Telegram", link: "https://t.me/alist_chat" },
+      {
+        text: "Discussion",
+        link: "https://github.com/OpenListTeam/OpenList/discussions",
+      },
+      { text: "Telegram", link: "https://t.me/+BYuDkV2f-ds2ODE1" },
       // { text: "Discord", link: "https://discord.gg/F4ymsH4xv2" },
     ],
   },
-  {
-    text: "更多",
-    icon: "iconfont icon-more",
-    children: [
-      { text: "演示", link: "https://alist.pages.dev/" },
-      { text: "V2", link: "https://alist-doc.example.com" },
-      { text: "桌面版", link: "https://ad.example.com/" },
-    ],
-  },
+  // {
+  //   text: "更多",
+  //   icon: "iconfont icon-more",
+  //   children: [
+  //     { text: "演示", link: "https://alist.pages.dev/" },
+  //     { text: "V2", link: "https://alist-doc.example.com" },
+  //     { text: "桌面版", link: "https://ad.example.com/" },
+  //   ],
+  // },
   {
     text: "Github",
     icon: "iconfont icon-github",
-    link: "https://github.com/AlistTeam/alist",
+    link: "https://github.com/OpenListTeam/OpenList",
   },
 ])
