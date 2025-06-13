@@ -1,5 +1,7 @@
 export const apis: Record<string, string> = {
-  cf: "https://oplist.8mi.tech/docs",  // max 10, minutes 60, need further investigation
+  cf: "",  // max 10, minutes 60, need further investigation
+  cn: "",
+  de: ""
 };
 
 if (typeof location !== "undefined") {
