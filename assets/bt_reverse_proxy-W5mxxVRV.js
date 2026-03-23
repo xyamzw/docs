@@ -1,0 +1,1 @@
+const e="/docs/img/guide/reverse_proxy/bt_new_website.png",_="/docs/img/guide/reverse_proxy/bt_new_website_01.png",s="/docs/img/guide/reverse_proxy/bt_delete_default_config_01.png",o="/docs/img/guide/reverse_proxy/bt_delete_default_config_02.png",r="/docs/img/guide/reverse_proxy/bt_reverse_proxy.png";export{e as _,_ as a,s as b,o as c,r as d};
